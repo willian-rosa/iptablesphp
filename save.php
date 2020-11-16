@@ -12,7 +12,7 @@ if(isset ($_POST['activar'])) {
 //    var_dump('ds');exit;
 
     //string com o comando a ser executado
-    $CMD = "sudo /usr/sbin/iptables -t $tabela -A $Cadeia -p $Protocolo -s $IP --dport $Porta -j $Alvo";
+    $CMD = "sudo iptables -t $tabela -A $Cadeia -p $Protocolo -s $IP --dport $Porta -j $Alvo";
 
     //Execução do Comando
     $resultado = shell_exec($CMD);
