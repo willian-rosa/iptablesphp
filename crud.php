@@ -57,7 +57,7 @@
             <tr>
                 <td>
                     <input type="hidden" name="activar" value="1">
-                    <button type="submit" class="btn btn-success">Success</button>
+                    <button type="submit" class="btn btn-success">Salvar</button>
                 </td>
             </tr>
             </tbody>

@@ -16,7 +16,7 @@ if(isset ($_POST['activar'])) {
 
     //Execução do Comando
     $resultado = shell_exec($CMD);
-    shell_exec($CMD);
+//    shell_exec($CMD);
     echo "<p><b>CMD QUE VAI SER EXECUTADO</b>:</p> $CMD";
     echo "<p><b>(CASO FALHE) TESTE O CMD NA CONSOLA PARA VERIFICA A SUA VALIDADE</b>:</p>";
 
