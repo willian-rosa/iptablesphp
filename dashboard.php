@@ -1,13 +1,12 @@
 <?php
 //string com o comando a ser executado
-$cmdList = "sudo iptables -L";
 
-//Execução do Comando
-$resultCmdList = shell_exec($cmdList);
+$shell    = \MTS\Factories::getDevices()->getLocalHost()->getShell('bash', true);
+$return1  = $shell->exeCmd('iptables -L');
 
 ?>
 <div>
-    <textarea style="width: 100%; height: 500px;"><?php echo $resultCmdList;?></textarea>
+    <textarea style="width: 100%; height: 500px;"><?php echo $return1;?></textarea>
 </div>
 
 
