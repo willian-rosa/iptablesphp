@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  web_server:
+    container_name: "iptables_server"
+    build:
+      context: .
+      dockerfile: DOCKERFILE
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - .:/var/www/html
+    tty: true
+    stdin_open: true

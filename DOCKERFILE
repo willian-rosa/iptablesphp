@@ -1,0 +1,13 @@
+FROM php:7.2.20-apache
+RUN a2enmod rewrite headers
+
+RUN apt-get update
+
+WORKDIR /var/www
+
+ENV DOCKERIZE_VERSION v0.6.1
+ENV current_os=linux
+
+RUN apt install -y iptables
+
+#iptables -L -v
